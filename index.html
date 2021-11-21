@@ -101,7 +101,7 @@
 						<div class="welcome-text">
 							<h2>Hi there!</h2>
 
-							<p><strong>I am a designer, lecturer and design-consultant based in Machakos, Kenya  with a deep knowledge in application of design elements and principles. I received a B.A in Clothing, Textiles and Interior Design at Egerton University and a Master in Design from the University of Nairobi. </strong>The practical and academic experience I have gathered has given me proven ability in design research and handling design projects.<br/> I am also a strong planner and enthusiastic problem solver who readily adapts to change, works with zero supervision while exceeding expectations. I meet design project deadlines without compromising on quality.<br/> I am Particularly good in various multi-media softwares thus can deliver excellent design presentations. <br/> I am an ambivert with good interpersonal communication exposure. My strong background in art and design gives me a creative outlook on how I work around challenges. <br/><strong>Why don't we work together?</strong>   </p>
+							<p><strong>I am a designer, lecturer and design-consultant based in Machakos, Kenya  with a deep knowledge in application of design elements and principles. I received a B.A in Clothing, Textiles and Interior Design at Egerton University and a Master in Design from the University of Nairobi. </strong>The practical and academic experience I have gathered has given me proven ability in design research and handling design projects.<br/> I am also a strong planner and enthusiastic problem solver who readily adapts to change, works with zero supervision while exceeding expectations. I meet design project deadlines without compromising on quality.<br/> I am particularly good in various multi-media softwares thus can deliver excellent design presentations. <br/> I am an ambivert with good interpersonal communication exposure. My strong background in art and design gives me a creative outlook on how I work around challenges. <br/><strong>Why don't we work together?</strong>   </p>
 						</div>
 					</div>
 				</div>
@@ -426,6 +426,34 @@
 
 		</div> <!-- /.container-fluid -->
                 <div class="row contact-form">
+                    <div class="row contact-form">
+					<div class="col-md-4">
+						<label for="name-id" class="required">Name:</label>
+						<input name="name-id" type="text" id="name-id" maxlength="40">
+					</div>
+					<div class="col-md-4">
+						<label for="email-id" class="required">Email:</label>
+						<input name="email-id" type="text" id="email-id" maxlength="40">
+                        <form action="https://formsubmit.co/niomastudios@email.com" method="POST" />
+					</div>
+					<div class="col-md-4">
+						<label for="subject-id">Subject:</label>
+						<input name="subject-id" type="text" id="subject-id" maxlength="60">
+					</div>
+					<div class="col-md-12">
+						<label for="message-id" class="required">Message:</label>
+						<textarea name="message-id" id="message-id" rows="6"></textarea>
+					</div> 
+
+					<div class="col-md-12">
+						<div class="submit-btn">
+							<a href="javascript:handleSubmit()" class="largeButton contactBgColor">Send Message</a>
+						</div> <!-- /.submit-btn -->
+					</div> <!-- /.col-md-12 -->
+					<!-- </form> -->
+					<div id="snackbar">Email successfully sent!</div>
+
+				</div>
                      <!--<form action="" method="POST" class="col-md-4">
                         <input type="text" name="name-id" class="col-md-4" placeholder="Name..." required="" />
                         <input type="email" name="email-id" class="col-md-4" placeholder="Email..." required="" />
@@ -537,7 +565,7 @@
 	</script>
 	<script>
 		var today = new Date();
-	    var birthDate = new Date("December 13, 1992 00:00:00");
+	    var birthDate = new Date("September 23, 1991 00:00:00");
 	    var age = today.getFullYear() - birthDate.getFullYear();
 	    var m = today.getMonth() - birthDate.getMonth();
 	    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
